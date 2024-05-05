@@ -49,7 +49,7 @@ export default function ImageModal({ isOpen, setIsOpen, image }: { isOpen: boole
                     Close
                   </button>
                 </div>
-                <div className="md:flex md:justify-center md:items-center md:min-h-screen md:w-full">
+                <figure className="md:flex md:justify-center md:items-center md:min-h-screen md:w-full">
                   <Image
                     width={300}
                     height={300}
@@ -57,7 +57,7 @@ export default function ImageModal({ isOpen, setIsOpen, image }: { isOpen: boole
                     alt="Family, Walking Father and Son"
                     className="block h-full w-full md:w-96 object-cover"
                   />
-                </div>
+                </figure>
               </Dialog.Panel>
             </Transition.Child>
           </div>

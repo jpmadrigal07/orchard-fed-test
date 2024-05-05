@@ -34,8 +34,8 @@ const AllTheLatest = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-20">
           {LATEST_ARTICLE.map((item) => {
             return (
-              <div key={item.title}>
-                <div className="h-72 border-b-4 border-fire-engine-red">
+              <article key={item.title}>
+                <figure className="h-72 border-b-4 border-fire-engine-red">
                   <Image
                     width={300}
                     height={300}
@@ -43,13 +43,13 @@ const AllTheLatest = () => {
                     alt={item.imageAlt}
                     className="block h-full w-full object-cover"
                   />
-                </div>
+                </figure>
                 <div className="mt-6">
                   <h4 className="capitalize font-semibold">{item.title}</h4>
                   <p className="mt-4 mb-6 font-thin text-sm leading-7 text-gray-400">{item.description}</p>
                   <Link href="#" onClick={() => console.log(item.link)} className="mt-10 uppercase font-semibold pb-1 border-b-2 border-fire-engine-red">Read More</Link>
                 </div>
-              </div>
+              </article>
             );
           })}
         </div>
